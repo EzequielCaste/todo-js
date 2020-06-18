@@ -13,25 +13,26 @@
 <div class="container">
   <h1>Todo List</h1>
   <div class="input">
-    <input id="input" type="text" placeholder="Add task ...">
-    <button onclick="addTodo()" class="button-primary">add</button>
-  </div>
-  <ul id="todo-list">
-    
-  </ul>
+    <input id="addTodoTextInput" type="text" placeholder="Add task ...">
+    <button onclick="handlers.addTodo()" class="button-primary">add</button>
+  </div>  
+  <ul></ul>
+  <div>    
+    <button onclick="handlers.toggleAll()">Toggle Todos</button>
+  </div>  
 </div>
-<div id="myModal" class="modal">
 
+<div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">    
     <label for="title">Edit Task:</label>
     <input type="text" id="edit-text">    
 
     <button id="edit" class="btn edit">Edit</button>
-    <button id="cancel" class="btn cancel">Cancel</button>
-    
+    <button onclick="handlers.closeModal()"id="cancel" class="btn cancel">Cancel</button>    
   </div>  
 </div>
+
 <footer>
   Coded with <i class="fas fa-heart"></i> by 
   <form action="https://github.com/ezzep66" method="GET">
@@ -40,6 +41,6 @@
     </button>
   </form>
 </footer>
-<script src="js/main.js"></script>  
+<script src="js/main1.js"></script>  
 </body>
 </html>

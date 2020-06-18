@@ -6,14 +6,25 @@ ul {
   padding: 0;
   list-style: none;
 }
-#todo-list button {
+ul li div {
+  display: flex;
+    flex-grow: 1;
+    margin-left: 1em;
+}
+.deleteButton, .showEditModal {
   border: 0px;
-  font-size: 1em;
-  height: 2em;
+  font-size: 1em;  
   padding: 2px;
   margin-left: 0.5em;
 }
-#todo-list li {
+.deleteButton:hover, .showEditModal:hover {
+  cursor: pointer;
+}
+.showEditModal {
+  margin-right: 1em;
+}
+ul li {
+  padding: 0.2em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
