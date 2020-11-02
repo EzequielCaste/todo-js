@@ -45,7 +45,7 @@ let todoList = {
 const handlers = {  
   addTodo: function() {
     let addTodoTextInput = document.getElementById("addTodoTextInput");
-    todoList.addTodo(addTodoTextInput.value);
+    addTodoTextInput.value ? todoList.addTodo(addTodoTextInput.value) : null
     addTodoTextInput.value = "";
     views.displayTodos();    
   },

@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Todo List App</title>
-</head>
-<body>
-  
-<div class="container">
-  <h1>Todo List</h1>
-  <div class="input">
-    <input id="addTodoTextInput" type="text" placeholder="Add task ...">
-    <button onclick="handlers.addTodo()" class="button-primary">add</button>
-  </div>  
-  <ul></ul>
-  <div>    
-    <button onclick="handlers.toggleAll()">Toggle Todos</button>
-  </div>  
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="input">
+        <form action="">
+          <input
+            required
+            id="addTodoTextInput"
+            type="text"
+            placeholder="Add task ..."
+          />
+          <button onclick="handlers.addTodo()" class="button-primary">
+            add
+          </button>
+        </form>
+      </div>
+      <ul></ul>
+      <div>
+        <button onclick="handlers.toggleAll()">Toggle Todos</button>
+      </div>
+    </div>
 
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">    
-    <label for="title">Edit Task:</label>
-    <input type="text" id="edit-text">    
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <label for="title">Edit Task:</label>
+        <input type="text" id="edit-text" />
 
-    <button id="edit" class="btn edit">Edit</button>
-    <button onclick="handlers.closeModal()"id="cancel" class="btn cancel">Cancel</button>    
-  </div>  
-</div>
+        <button id="edit" class="btn edit">Edit</button>
+        <button onclick="handlers.closeModal()" id="cancel" class="btn cancel">
+          Cancel
+        </button>
+      </div>
+    </div>
 
-<footer>
-  Coded with <i class="fas fa-heart"></i> by 
-  <form action="https://github.com/EzequielCaste" method="GET">
-    <button class="btn">
-      Ezequiel
-    </button>
-  </form>
-</footer>
-<script src="js/main1.js"></script>  
-</body>
+    <footer>
+      Coded with <i class="fas fa-heart"></i> by
+      <form action="https://github.com/EzequielCaste" method="GET">
+        <button class="btn">Ezequiel</button>
+      </form>
+    </footer>
+    <script src="js/main1.js"></script>
+  </body>
 </html>
